@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'maven' // Or specify the label corresponding to a node with Maven installed
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
